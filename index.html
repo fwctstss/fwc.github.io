@@ -1,0 +1,30 @@
+<html>
+<head>
+  <script language="Javascript">
+    function sayhello() {
+      var yourname=form1.name1.value;
+      switch (yourname) {
+        case "A":
+          yourname="Alexander";
+          break;
+        case "B":
+          yourname="Bosco";
+          break;
+        case "C":
+          yourname="Christopher";
+          break;
+        default:
+          yourname="No Such Person";
+        }
+      window.alert("hello, "+yourname);
+    }
+</script>
+</head>
+<body>
+<form name="form1">
+   person (A/B/C):
+  <input type="text"   name="name1">
+  <input type="button" name="submit"   value="submit" onClick="sayhello();">
+</form>
+</body>
+</html>
